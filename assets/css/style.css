@@ -9,11 +9,7 @@ html {
 }
 
 /* Common */
-.row::after {
-    content: "";
-    display: block;
-    clear: both;
-}
+
 
 .text-white {
     color: white !important;
@@ -43,6 +39,20 @@ html {
     margin-right: -8px;
 }
 
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col-full{
+    width: 100%;
+}
+
+.col-half {
+    width: 50%;
+}
+
 .col-third {
     width: calc(100%/3);
 }
@@ -68,9 +78,12 @@ html {
 
 }
 
+.submit-button:hover,
+.buy-ticket:hover,
 #header .nav-content li:hover > a {
     color: #000;
     background-color: #ccc;
+    cursor: pointer;
 }
 
 
@@ -159,18 +172,196 @@ html {
 #container #band .band-content {
     text-align: justify;
 }
+.band-member-list{
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
 
-#container #band .list-band-member {
+#container #band .band-member-img {
+    padding-bottom: 16px;
+    width: 80%;
+}
 
+.band-member {
+    text-align: center;
+}
+
+.band-member:hover {
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 
 
-#container #band .band-member-img {
+.band-member > p {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
 
+/* Tour dates */
+#tour {
+    padding: 64px 64px;
+    background-color: #000;
+}
+
+.tour-ticket {
+    background-color: #fff;
+    padding: 16px 8px;
+    border-radius: 2px;
+}
+
+.tour-ticket:hover {
+    box-shadow: 0 0 16px rgb(114 114 114 / 50%);
+}
+.ticket-sold-out {
+    display: inline-block;
+    background-color: red;
+    color: #fff;
+    padding: 2px 8px;
+    margin-left: 16px;
+    border-radius: 2px;
+}
+
+.ticket-available {
+    display: inline-block;
+    float: right;
+    /* right: -32px; */
+    /* left: 32px; */
+    background-color: #000;
+    /* line-height: 24px; */
+    padding: 4px 4px;
+    border-radius: 50%;
+    text-align: center;
+    justify-content: center;
+}
+
+#tour .tour-ticket li {
+    padding: 4px;
+    font-size: 16px;
+    color: #757575;
+    list-style: none;
+}
+
+.tour-location-list{
+    margin-top: 32px;
+    margin-bottom: 64px;
+}
+.tour-location-content {
+    background-color: #fff;
+    padding: 16px;
+}
+
+.tour-location{
+    border-radius: 2px;
+}
+
+.tour-location > p {
+    text-align: left;
+}
+
+.tour-location-img{
+    display: block;
+    width: 100%;
+}
+
+.tour-time{
+    margin-top: 16px;
+    margin-bottom: 16px;
+    color: #757575;
+}
+
+.buy-ticket {
+    color: #fff;
+    background-color: #000;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 2px;
+}
+
+/* Contact */
+#contact {
+    padding: 64px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.contact-content {
+    padding-top: 16px;
+}
+
+.contact-infor{
+    font-size: 20px;
+}
+
+.contact-infor > p > i {
+    padding-right: 16px;
+    /* text-align: left; */
+    line-height: 1.4;
+}
+
+.contact-fill-in {
+
+}
+
+/* .contact-input {
+    float: left;
+    padding: 8px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    
+} */
+
+.form-control {
+    padding: 9px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+
+.contact-input-messages {
+    width: 100%;
+}
+
+.submit-button {
+    display: block;
+    float: right;
+    padding: 8px;
+    color: #fff;
+    background-color: #000;
+    border: none;
+    border-radius: 2px;
+    margin-top: 8px;
+}
+
+/* Map */
+#map {
+    width: 100%;
+    min-height: 838px;
+    background: url('/assets/img/map.jpg') top center / cover no-repeat;
 }
 
 
 /* Footer */
 #footer {
+    text-align: center;
+    margin: 32px 64px;
+    color: #000;
+}
 
+.footer-icon-social li:hover {
+    opacity: 0.8;
+}
+
+.footer-icon-social > li {
+    padding-bottom: 8px;
+    padding-top: 8px;
+    font-size: 24px;
+    display: inline-block;
+}
+
+#footer > p > a {
+    color: rgb(0, 0, 0);
 }
