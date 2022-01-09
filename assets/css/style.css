@@ -343,7 +343,7 @@ html {
 #map {
     width: 100%;
     min-height: 838px;
-    background: url('/assets/img/thisismap.png') top center / cover no-repeat;
+    background: url('/assets/img/thisismap.PNG') top center / cover no-repeat;
 }
 
 
