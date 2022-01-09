@@ -14,10 +14,10 @@
     <div id="header">
         <nav class="nav">
             <ul class="nav-content">
-                <li><a href="">Home</a></li>
-                <li><a href="">Band</a></li>
-                <li><a href="">Tour</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#band">Band</a></li>
+                <li><a href="#tour">Tour</a></li>
+                <li><a href="#contact">Contact</a></li>
                 <li id="nav-show-more">
                     <a href="">More <i class="ti-angle-down" style="font-size: 12px; padding: 0 4px;" ></i></a>
                     <ul  class="nav-header-more">
@@ -102,7 +102,7 @@
                         <h2>New York</h2>
                         <p class="tour-time">Fri 27 Nov 2016</p>
                         <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                        <div class="buy-ticket">Buy ticket</div>                    
+                        <div class="buy-ticket  js-buy-ticket">Buy ticket</div>                    
                     </div>
                 </div>
                 <div class="tour-location col col-third">
@@ -111,7 +111,7 @@
                         <h2>Paris</h2>
                         <p class="tour-time">Fri 28 Nov 2016</p>
                         <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                        <div class="buy-ticket">Buy ticket</div>                    
+                        <div class="buy-ticket  js-buy-ticket">Buy ticket</div>                    
                     </div>
                 </div>
                 <div class="tour-location col col-third">
@@ -120,7 +120,7 @@
                         <h2>San Francisco</h2>
                         <p class="tour-time">Fri 29 Nov 2016</p>
                         <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                        <div class="buy-ticket">Buy ticket</div>                    
+                        <div class="buy-ticket  js-buy-ticket">Buy ticket</div>                    
                     </div>
                 </div>
             </div>
@@ -161,13 +161,54 @@
         <!-- End band tour map -->
     </div>
     <!-- End container -->
-    <!-- Start footer -->
-    <footer></footer>
-    <!-- End footer -->
-    <div id="main-buy-ticket">
-        
-    </div>
 
+    <div id="modal" class="js-modal">
+        <div class="modal-container js-modalContainer">
+            <div class="modal-header">
+                <li class="ti-close modal-close js-modal-close"></li>
+                <li class="ti-ticket">
+                <p>Tickets</p>
+            </div>
+            <div class="modal-content">
+                <div class="modal-content-input">
+                    <li class="ti-shopping-cart"></li>
+                    <p>Tickets, $15 per person</p>
+                </div>
+                <div><input type="text" placeholder="How manay?"></div>
+                <div class="modal-content-input">
+                    <li class="ti-user"></li>
+                    <p>Send to</p>
+                </div>
+                <div><input type="email" placeholder="Enter your email"></div>
+                <button class="modal-button">PAY</button>
+            </div>
+            <p>Need <a href="">help</a></p>
+        </div>
+    </div>
+<!-- //Show buy tickets -->
+        <script>
+            const buyBtns = document.querySelectorAll('.js-buy-ticket')
+            const modal = document.querySelector('.js-modal')
+            const modalClose = document.querySelector('.js-modal-close')
+            const modalContainer = document.querySelector('.js-modalContainer')
+
+            function showBuyTickets() {
+                modal.classList.add('open')
+            }
+
+            function hideBuyTickets() {
+                modal.classList.remove('open')
+            }
+
+            for(const buyBtn of buyBtns){
+                buyBtn.addEventListener('click', showBuyTickets)
+            }
+            modalClose.addEventListener('click', hideBuyTickets )
+            modal.addEventListener('click', hideBuyTickets )
+            modalContainer.addEventListener('click', function(event){
+                event.stopPropagation()
+            })
+        </script>
     <!-- Start footer -->
     <div id="footer">
         <div class="footer-icon-social">
