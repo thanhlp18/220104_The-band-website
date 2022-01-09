@@ -147,7 +147,7 @@ html {
 #container #slider {
    height: 100%;
    /* background-image: url('/assets/img/slider/slider1.jpg');  */
-   background: url('https://github.com/lpt18/01_220104_The-band-website/blob/main/assets/img/slider/slider1.jpg') top center / cover no-repeat;
+   background: url('https://raw.githubusercontent.com/lpt18/01_220104_The-band-website/main/assets/img/slider/slider1.jpg') top center / cover no-repeat;
    position: relative;
    padding-top: 36%;
 }
@@ -343,7 +343,7 @@ html {
 #map {
     width: 100%;
     min-height: 838px;
-    background: url('https://github.com/lpt18/01_220104_The-band-website/blob/main/assets/img/map.jpg') top center / cover no-repeat;
+    background: url('https://raw.githubusercontent.com/lpt18/01_220104_The-band-website/main/assets/img/map.jpg') top center / cover no-repeat;
 }
 
 
