@@ -343,7 +343,7 @@ html {
 #map {
     width: 100%;
     min-height: 838px;
-    background: url('/assets/img/map.png') top center / cover no-repeat;
+    background: url('https://raw.githubusercontent.com/lpt18/01_220104_The-band-website/e942c2641d3997d768da484d07bbaebc6f3dff5a/assets/img/map.jpg') top center / cover no-repeat;
 }
 
 
