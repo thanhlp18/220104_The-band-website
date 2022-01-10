@@ -146,7 +146,7 @@ html {
 /* Slider */
 #container #slider {
    height: 100%;
-   background-image: url('/assets/img/slider/slider1.jpg');
+   /* background-image: url('/assets/img/slider/slider1.jpg'); */
    /* background-image: url('https://www.pommietravels.com/wp-content/uploads/2012/01/Times-Square-by-Night-1024x685.jpg');  */
    position: relative;
    padding-top: 36%;
