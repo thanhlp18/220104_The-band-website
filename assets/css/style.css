@@ -147,7 +147,6 @@ html {
 #container #slider {
    height: 100%;
    /* background-image: url('/assets/img/slider/slider1.jpg');  */
-   background: url('/assets/img/slider/slider1.png') top center / cover no-repeat;
    position: relative;
    padding-top: 36%;
 }
@@ -343,7 +342,6 @@ html {
 #map {
     width: 100%;
     min-height: 838px;
-    background: url('/assets/img/thisismap.PNG') top center / cover no-repeat;
 }
 
 
