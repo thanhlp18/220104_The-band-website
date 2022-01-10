@@ -146,7 +146,8 @@ html {
 /* Slider */
 #container #slider {
    height: 100%;
-   background-image: url('https://www.pommietravels.com/wp-content/uploads/2012/01/Times-Square-by-Night-1024x685.jpg'); 
+   background-image: url('/assets/img/slider/slider1.jpg');
+   /* background-image: url('https://www.pommietravels.com/wp-content/uploads/2012/01/Times-Square-by-Night-1024x685.jpg');  */
    position: relative;
    padding-top: 36%;
 }
@@ -345,6 +346,7 @@ html {
 #map {
     width: 100%;
     min-height: 838px;
+    background-image: url('/assets/img/map.jpg');
     background: url('https://nypost.com/wp-content/uploads/sites/2/2020/08/new-york-06.jpg?quality=80&strip=all') top center / cover no-repeat;
 }
 
