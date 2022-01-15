@@ -1,0 +1,39 @@
+/* Mobile */
+@media (max-width: 740px) {
+    #header{
+        overflow: hidden;
+    }
+
+    #header .nav-content > li {
+        display: block;
+    }
+
+    #header .nav-header-more {
+        background-color: #333;
+        width: 100%;
+    }
+
+    #header .nav-content > li:first-child {
+        display: inline-block;
+    }
+
+    #header .nav-icon-menu {
+        display: inline-block;
+    }
+
+    .nav-icon-search {
+        display: none;
+    }
+
+    .s-col-full {
+        width: 100%;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .content-padding{
+        padding: 64px 20px;
+    }
+}

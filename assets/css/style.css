@@ -9,8 +9,12 @@ html {
 }
 
 /* Common */
-
-
+.content-padding {
+    padding: 64px;
+}
+.pt-32 {
+    padding-top: 32px;
+}
 .text-white {
     color: white !important;
 }
@@ -27,11 +31,6 @@ html {
     padding-bottom: 16px;
     font-style: italic;
     color: rgba(0,0,0,0.5);
-}
-
-.padding-left-right {
-    padding-left: 64px !important;
-    padding-right: 64px !important;
 }
 
 .row {
@@ -105,6 +104,9 @@ html {
     padding: 0 16px;
     width: 100%;
 }
+#header .nav-header-more li a {
+    padding-left: 8px;
+}
 
 #header .nav-header-more {
     display: none;
@@ -121,7 +123,7 @@ html {
     display: block;
 }
 
-#header .nav-icon-search {
+#header .nav-icon-btn {
     padding: 16px;
     color: #fff;
     position: absolute;
@@ -132,7 +134,11 @@ html {
     width: 48px;
 }
 
-#header .nav-icon-search:hover {
+#header .nav-icon-menu {
+    display: none;
+}
+
+#header .nav-icon-btn:hover {
     color: #fff;
     background-color: red;
     cursor: pointer;
@@ -169,9 +175,6 @@ html {
 }
 
 /* Band */
-#container #band{
-    padding: 64px;
-}
 
 #container #band .band-content {
     text-align: justify;
@@ -202,7 +205,6 @@ html {
 
 /* Tour dates */
 #tour {
-    padding: 64px 64px;
     background-color: #000;
 }
 
@@ -227,10 +229,7 @@ html {
 .ticket-available {
     display: inline-block;
     float: right;
-    /* right: -32px; */
-    /* left: 32px; */
     background-color: #000;
-    /* line-height: 24px; */
     padding: 4px 4px;
     border-radius: 50%;
     text-align: center;
@@ -245,7 +244,6 @@ html {
 }
 
 .tour-location-list{
-    margin-top: 32px;
     margin-bottom: 64px;
 }
 .tour-location-content {
@@ -254,6 +252,7 @@ html {
 }
 
 .tour-location{
+    margin-top: 32px;
     border-radius: 2px;
 }
 
@@ -272,34 +271,14 @@ html {
     color: #757575;
 }
 
-.buy-ticket {
-    color: #fff;
-    background-color: #000;
-    margin-top: 16px;
-    margin-bottom: 16px;
-    display: inline-block;
-    padding: 8px 16px;
-    border-radius: 2px;
-}
-
 /* Contact */
-#contact {
-    padding: 64px;
-    margin-top: 32px;
-    margin-bottom: 32px;
-}
-
-.contact-content {
-    padding-top: 16px;
-}
-
 .contact-infor{
     font-size: 20px;
 }
 
 .contact-infor > p > i {
     padding-right: 16px;
-    /* text-align: left; */
+    padding-left: 8px;
     line-height: 1.4;
 }
 
@@ -316,7 +295,7 @@ html {
 } */
 
 .form-control {
-    padding: 9px;
+    padding: 16px;
     width: 100%;
     border: 1px solid #ccc;
     border-radius: 2px;
@@ -329,29 +308,32 @@ html {
     width: 100%;
 }
 
-.submit-button {
-    display: block;
-    float: right;
-    padding: 8px;
+.btn {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    padding: 12px 16px;
+    display: inline-block;
+    border-radius: 2px;
+    font-size: 16px;
+    text-align: center;
+    border: none;
     color: #fff;
     background-color: #000;
-    border: none;
-    border-radius: 2px;
-    margin-top: 8px;
+}
+.submit-button {
+    float: right;
 }
 
 /* Map */
 #map {
     width: 100%;
-    min-height: 838px;
-    background: url('/assets/img/map.jpg')  top center / cover no-repeat;
+    min-height: 800px;
 }
 
 
 /* Footer */
 #footer {
     text-align: center;
-    margin: 32px 64px;
     color: #000;
 }
 
@@ -360,8 +342,8 @@ html {
 }
 
 .footer-icon-social > li {
-    padding-bottom: 8px;
-    padding-top: 8px;
+    padding: 16px 8px 32px;
+    font-size: 24px;
     font-size: 24px;
     display: inline-block;
 }
@@ -385,14 +367,18 @@ html {
     display: block !important;
 }
 
-.modal-container{
+.modal-container {
     background-color: #fff;
-    width: 800px;
+    width: 90%;
     height: 80%;
-    top: 10%;
-    bottom: 10%;
-    position: relative;
-    margin: auto;   
+    max-height: 480px;
+    min-width: 360px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    margin: auto;
     animation: modalFadeIn ease 0.4s;
 }
 
@@ -432,7 +418,6 @@ html {
 .modal-container > p {
     display: inline-block;
     padding: 32px;
-    /* margin-bottom: 32px; */
     float: right;
 }
 
@@ -457,18 +442,15 @@ html {
 
 .modal-button{
     float: right;
-    padding: 12px 24px;
-    margin-top: 16px;
-    font-size: 12px;
-    border: 1px solid #ccc;
-    background-color: #ccc;
-    color: #000;
-}
-
-.modal-button:hover {
     color: #fff;
     border: 1px solid #009688;
     background-color: #009688;
+}
+
+.modal-button:hover {
+    color: #000;
+    border: 1px solid #ccc;
+    background-color: #ccc;
 }
 
 

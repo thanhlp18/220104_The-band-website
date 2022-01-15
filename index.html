@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Band</title>
-    <link rel="stylesheet" href="./assets/css/style.css ">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
 </head>
@@ -19,7 +20,7 @@
                 <li><a href="#tour">Tour</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li id="nav-show-more">
-                    <a href="">More <i class="ti-angle-down" style="font-size: 12px; padding: 0 4px;" ></i></a>
+                    <a>More <i class="ti-angle-down" style="font-size: 12px; padding: 0 4px;" ></i></a>
                     <ul  class="nav-header-more">
                         <li><a href="">Merchandise</a></li>
                         <li><a href="">Extras</a></li>
@@ -27,8 +28,11 @@
                     </ul>
                 </li>
             </ul>
-            <div class="nav-icon-search">
+            <div class="nav-icon-btn nav-icon-search">
                 <i class="ti-search"></i>
+            </div>
+            <div class="nav-icon-btn nav-icon-menu js-menu-btn">
+                <i class="ti-menu"></i>
             </div>
         </nav>
     </div>
@@ -46,7 +50,7 @@
         <!-- End slider -->
 
         <!-- Start band content -->
-        <div id="band" class="padding-left-right">
+        <div id="band" class="content-padding">
             <div class="content-heading">
                 The band
             </div>
@@ -55,15 +59,15 @@
             </div>
             <p class="band-content">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             <div class="band-member-list row">
-                <div class="band-member col col-third">
+                <div class="band-member col col-third s-col-full">
                     <p>Member name</p>
                     <img src="./assets/img/member/bandmember.jpg" alt="" class="band-member-img">
                 </div>
-                <div class="band-member col col-third">
+                <div class="band-member col col-third s-col-full">
                     <p>Member name</p>
                     <img src="./assets/img/member/bandmember.jpg" alt="" class="band-member-img">
                 </div>
-                <div class="band-member col col-third">
+                <div class="band-member col col-third s-col-full">
                     <p>Member name</p>
                     <img src="./assets/img/member/bandmember.jpg" alt="" class="band-member-img">
                 </div>
@@ -72,7 +76,7 @@
         <!-- End band content -->
 
         <!-- Start band tour dates -->
-        <div id="tour">
+        <div id="tour" class="content-padding">
             <div class="content-heading  text-white">
                 TOUR DATES
             </div>
@@ -96,38 +100,38 @@
                 </ul>
             </div>
             <div class="row tour-location-list">
-                <div class="tour-location col col-third">
+                <div class="tour-location col col-third s-col-full">
                     <img src="./assets/img/place/newyork.jpg" alt="" class="tour-location-img">
                     <div class="tour-location-content">
                         <h2>New York</h2>
                         <p class="tour-time">Fri 27 Nov 2016</p>
                         <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                        <div class="buy-ticket  js-buy-ticket">Buy ticket</div>                    
+                        <div class="btn  js-buy-ticket">Buy ticket</div>                    
                     </div>
                 </div>
-                <div class="tour-location col col-third">
+                <div class="tour-location col col-third s-col-full">
                     <img src="./assets/img/place/paris.jpg" alt="" class="tour-location-img">
                     <div class="tour-location-content">
                         <h2>Paris</h2>
                         <p class="tour-time">Fri 28 Nov 2016</p>
                         <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                        <div class="buy-ticket  js-buy-ticket">Buy ticket</div>                    
+                        <div class="btn  js-buy-ticket">Buy ticket</div>                    
                     </div>
                 </div>
-                <div class="tour-location col col-third">
+                <div class="tour-location col col-third s-col-full">
                     <img src="./assets/img/place/sanfran.jpg" alt="" class="tour-location-img">
                     <div class="tour-location-content">
                         <h2>San Francisco</h2>
                         <p class="tour-time">Fri 29 Nov 2016</p>
                         <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                        <div class="buy-ticket  js-buy-ticket">Buy ticket</div>                    
+                        <div class="btn  js-buy-ticket">Buy ticket</div>                    
                     </div>
                 </div>
             </div>
         </div>
         <!-- End band tour dates -->
         <!-- Start band tour dates -->
-        <div id="contact">
+        <div id="contact" class="content-padding">
             <div class="content-heading">
                 CONTACT
             </div>
@@ -135,21 +139,21 @@
                 Fan? Drop a note!
             </div>
             <div class="contact-content row">
-                <div class="contact-infor col col-half">
+                <div class="contact-infor col col-half s-col-full pt-32">
                     <p><i class="ti-location-pin"></i>Chicago, US</p>
                     <p><i class="ti-mobile"></i>Phone: +00 151515</p>
                     <p><i class="ti-email"></i>Email: mail@mail.com</p>
                 </div>
-                <div class="contact-fill-in col col-half">
+                <div class="contact-fill-in col col-half s-col-full pt-32">
                     <form action="" class="col">
                         <div class="row">
-                            <div class="col col-half"><input type="text" required  class="form-control " placeholder="NAME" ></div>
-                            <div class="col col-half"><input type="email"  required class="form-control " placeholder="EMAIL" ></div>
+                            <div class="col col-half s-col-full"><input type="text" required  class="form-control " placeholder="NAME" ></div>
+                            <div class="col col-half s-col-full"><input type="email"  required class="form-control " placeholder="EMAIL" ></div>
                         </div>
                             <div class="row">
-                                <div class="col col-full"><input type="email"  required class="form-control " placeholder="EMAIL" ></div>
+                                <div class="col col-full"><input type="text"  required class="form-control " placeholder="MESSAGE" ></div>
                             </div>      
-                        <input class="submit-button" type="button" value="SUBMIT">
+                        <input class="submit-button btn" type="submit" value="SUBMIT">
                     </form>
                 </div>
             </div>
@@ -162,6 +166,19 @@
     </div>
     <!-- End container -->
 
+    <!-- Start footer -->
+    <div id="footer" class="content-padding">
+        <div class="footer-icon-social">
+            <li class="ti-facebook"></li>
+            <li class="ti-instagram"></li>
+            <li class="ti-pinterest-alt"></li>
+            <li class="ti-twitter"></li>
+            <li class="ti-reddit"></li>
+            <li class="ti-linkedin"></li>
+        </div>
+        <p class="coppyright">Powered by <a href="https://www.w3schools.com/w3css/default.asp">w3.css</a></p>
+    </div>
+    <!-- End footer -->
     <div id="modal" class="js-modal">
         <div class="modal-container js-modalContainer">
             <div class="modal-header">
@@ -180,17 +197,21 @@
                     <p>Send to</p>
                 </div>
                 <div><input type="email" placeholder="Enter your email"></div>
-                <button class="modal-button">PAY</button>
+                <button class="modal-button btn">PAY</button>
+                <p>Need <a href="">help</a></p>
             </div>
-            <p>Need <a href="">help</a></p>
         </div>
     </div>
 <!-- //Show buy tickets -->
         <script>
+            const header = document.getElementById('header');
+            const menuItems = document.querySelectorAll('.nav  li  a[href*="#"] ')
             const buyBtns = document.querySelectorAll('.js-buy-ticket')
             const modal = document.querySelector('.js-modal')
             const modalClose = document.querySelector('.js-modal-close')
             const modalContainer = document.querySelector('.js-modalContainer')
+            const menuBtn = document.querySelector('.js-menu-btn')
+            var headerHeight = header.clientHeight;
 
             function showBuyTickets() {
                 modal.classList.add('open')
@@ -208,19 +229,32 @@
             modalContainer.addEventListener('click', function(event){
                 event.stopPropagation()
             })
+            menuBtn.onclick = function() {
+                var isClose = header.clientHeight === headerHeight;
+                if(isClose) {
+                    header.style.height = 'auto';
+                    header.style.overflow = 'unset';
+                } else {
+                    header.style.height = null;
+                    header.style.overflow = 'hidden';
+                }
+            }
+            for(var i = 0; i<menuItems.length; i++){
+            var menuItem = menuItems[i];
+            
+            menuItem.onclick = function() {
+                var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('nav-header-more');
+                if(isParentMenu){
+                    event.preventDefault();
+                    header.style.overflow = 'unset';
+                } else {
+                    header.style.height = null;
+                    header.style.overflow = 'hidden';
+                }
+            }
+            }
+            
         </script>
-    <!-- Start footer -->
-    <div id="footer">
-        <div class="footer-icon-social">
-            <li class="ti-facebook"></li>
-            <li class="ti-instagram"></li>
-            <li class="ti-pinterest-alt"></li>
-            <li class="ti-twitter"></li>
-            <li class="ti-reddit"></li>
-            <li class="ti-linkedin"></li>
-        </div>
-        <p class="coppyright">Powered by <a href="https://www.w3schools.com/w3css/default.asp">w3.css</a></p>
-    </div>
-    <!-- End footer -->
+    
 </body>
 </html>
